@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Title from './components/Title.js';
+import Navigation from './components/Navigation.js';
+import Body from './components/Body.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Dunk it Jonathan
-        </a>
-      </header>
+    <div>
+      <div className='parent-container'>
+        <Title titleText='Simple React SPA'/>
+        <Navigation />
+        <Body 
+          contentTitle='Title'
+          contentText='Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus diam vitae nunc venenatis, at placerat turpis tempus. Proin interdum gravida est, imperdiet luctus eros feugiat id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In eu ante non velit ultrices hendrerit. Donec sollicitudin tellus nec enim molestie, nec molestie magna elementum. Etiam iaculis, neque et pretium iaculis, justo tellus convallis urna, sit amet imperdiet sem dui eget massa. Nunc volutpat justo id pretium fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac orci ligula.'
+        />
+      </div>
     </div>
   );
 }

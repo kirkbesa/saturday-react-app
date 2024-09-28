@@ -1,0 +1,21 @@
+ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 1em;
+}
+
+li:hover {
+    background-color: #ff7f27;
+    font-weight: bold;
+}
+
+.active {
+    background-color: #ff7f27;
+    font-weight: bold;
+}
