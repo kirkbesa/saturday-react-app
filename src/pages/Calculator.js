@@ -27,29 +27,37 @@ export default function Calculator() {
     }
 
     const calculate = () => {
-        setGrade((quizGrade * 0.3) + (labGrade * 0.3) + (examGrade * 0.4));
-        setFinalGrade(gradeMatrix(grade));
+        const calculatedGrade = (quizGrade * 0.3) + (labGrade * 0.3) + (examGrade * 0.4);
+        setGrade(calculatedGrade);
+        setFinalGrade(gradeMatrix(calculatedGrade));
     }
 
     return (
         <div className="calculator-container">
+                <h1>Grades Calculator</h1>
+                <div>
+                    <p>Quizzes</p>
+                    <input type='number' value={quizGrade} onChange= {(e) => setQuizGrade(e.target.value)}></input>
 
-            <div>
-                <p>Quizzes</p>
-                <input type='number' value={quizGrade} onChange= {(e) => setQuizGrade(e.target.value)}></input>
+                    <p>Lab Activities</p>
+                    <input type='number' value={labGrade} onChange= {(e) => setLabGrade(e.target.value)}></input>   
 
-                <p>Lab Activities</p>
-                <input type='number' value={labGrade} onChange= {(e) => setLabGrade(e.target.value)}></input>   
+                    <p>Final Exam</p>
+                    <input type='number' value={examGrade} onChange= {(e) => setExamGrade(e.target.value)}></input>
 
-                <p>Final Exam</p>
-                <input type='number' value={examGrade} onChange= {(e) => setExamGrade(e.target.value)}></input>
+                    <br />
 
-                <br />
-                <button onClick={calculate}>Submit (Click twice)</button>
+                    <button className="submit-button" onClick={calculate}>Submit (Click twice)</button>
 
-                <p className="result">Grade: {grade}</p>
-                <p className="result">Final Grade: {finalGrade}</p>
-            </div>
+                    <hr/>
+
+                    <div className="result">
+                        <p>Grade: {grade}</p>
+                        <p>Final Grade: {finalGrade}</p>
+                    </div>
+
+                    <button className="calculate-button" onClick={calculate}>Logout</button>
+                </div>
             
         </div>
     );
