@@ -4,19 +4,56 @@
     background-color:#ffffff;
     filter: drop-shadow(0px 0px 10px #bbbbbb);
     margin:  auto;
-    padding: 1.5em;
+    padding: 2em;
     border-radius: 10px;
+    
+}
+h1 {
+    color: black;
+    padding: 0px;
+    margin: 0px 0px 1em 0px;
+    text-align: center;
 }
 
 p {
+    font-size: 1em;
+    margin: 0.5em 0px;
 }
 
 input {
+    margin: 0px 0px 1em 0px;
+    width: 100%;
+    font-size: 14px;
+    padding: 0.5em 0px 0.5em 0.5em;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 0.4em;
+    font-size: 1em;
 }
 
 button {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0px;
+    font-size: 1em;
+    box-sizing: border-box;
+    color: #fff;
+    border-radius: 0.4em;
 }
 
+.submit-button {
+    background-color: rgba(13, 110, 253, 1);
+    border: 1px solid rgba(13, 110, 253, 1);
+}
+
+.calculate-button {
+    background-color: rgba(220, 53, 69, 1);
+    border: 1px solid rgba(220, 53, 69, 0.5);
+}
+
+
 .result {
+    padding: 1em;
+    font-size: 1em;
     text-align: center;
 }

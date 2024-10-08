@@ -9,7 +9,6 @@ export default function App() {
   return (
     <div>
       <div>
-          <Title titleText='Grades Calculator'/>
           <Calculator />
       </div>
       
