@@ -47,7 +47,7 @@ export default function Calculator() {
 
                     <br />
 
-                    <button className="submit-button" onClick={calculate}>Submit (Click twice)</button>
+                    <button className="submit-button" onClick={calculate}>Submit</button>
 
                     <hr/>
 
