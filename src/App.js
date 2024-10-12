@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 import Home from './pages/Home.js';
+import Calculator from './pages/Calculator.js';
 
 export default function App() {
   {/* MIDTERMS */}
@@ -29,7 +30,7 @@ export default function App() {
   return (
       <div>
 
-        {valid ? <Home /> : 
+        {valid ? <Calculator /> : 
 
           <div className="login-parent-container">
             <div className="login-container"> 

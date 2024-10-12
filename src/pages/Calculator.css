@@ -1,3 +1,10 @@
+.calculator-parent-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+  }
+
 .calculator-container {
     height: auto;
     width:  40%;
