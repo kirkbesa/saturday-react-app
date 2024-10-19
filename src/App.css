@@ -59,3 +59,6 @@
   border: 1px solid rgba(220, 53, 69, 0.5);
 }
 
+#PageContent {
+  margin-top: 80px;
+}

@@ -1,8 +1,9 @@
 .parent-container {
     height: auto;
-    width:  100%;
+    width:  40%;
     background-color:rgb(182, 182, 182);
     color: white;
+    margin:  auto;
     padding: 1.5em;
     text-align: center;
 }
