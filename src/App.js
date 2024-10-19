@@ -1,7 +1,11 @@
 import './App.css';
 import { useState } from 'react';
+import { BrowserRouter,  Route, Routes } from 'react-router-dom';
+import Navigation from './components/Navigation.js';
 import Home from './pages/Home.js';
-import Calculator from './pages/Calculator.js';
+import About from './pages/About.js';
+import Contact from './pages/Contact.js';
+
 
 export default function App() {
   {/* MIDTERMS */}
@@ -29,8 +33,22 @@ export default function App() {
   
   return (
       <div>
+        
+        {valid ? 
+        
+          <BrowserRouter>
+            <Navigation />
+            <div id="PageContent">
+              <Routes>
+                <Route path="/" element={<Home />}/>
+                <Route path="/about" element={<About />}/>
+                <Route path="/contact" element={<Contact />}/>
+                <Route path="/*" element={<h1>Page Not Found</h1>}/>  
+              </Routes>
+            </div>
+          </BrowserRouter>
 
-        {valid ? <Calculator /> : 
+        :
 
           <div className="login-parent-container">
             <div className="login-container"> 
